@@ -1,0 +1,383 @@
+@import url('https://fonts.googleapis.com/css?family=Padauk&display=swap');
+
+h3 {
+  font-weight: 500;
+}
+
+h3 a{
+  text-decoration: none;
+  color: #fff;
+}
+
+h3 a:hover{
+  color: #2A9BE5;
+}
+
+.separator {
+  width: 80px;
+  height: 5cm;
+  margin: 1em auto;
+  display: inline-block;
+}
+
+.bg-red {
+  background-color: #2A9BE5 !important;
+}
+
+
+
+.top-section {
+  background-image: url("/Users/georgiobejjani/Desktop/Projet_informatique/dietProject/Diet-project-frontend/diet-planning-app/src/photos/background_homepage.jpg");
+  min-height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.top-section:before {
+  content: "";
+  position: absolute;
+  top:0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0.5;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.top-wrapper {
+  text-align: center;
+  position: relative;
+  color: white;
+  padding-bottom: 2em;
+}
+
+.top-title {
+  margin-bottom: 7em;
+}
+
+.top-title h1 {
+  margin: 0 auto;
+  font-weight: 600;
+  font-size: 3.5rem;
+}
+
+.top-keywords-wrapper {
+  margin: 7em auto 4em;
+  min-height: 80px;
+  overflow-x: hidden;
+  flex-wrap: nowrap;
+  animation: fadeIn 10s infinite ease-in-out;
+}
+
+.top-keywords-wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+
+.contact-btn-wrapper a {
+  margin: 0 auto;
+}
+
+.contact-btn-wrapper button {
+  border-radius: 50px;
+  color: white !important;
+  padding: 0.5em 3em;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0 auto;
+}
+
+
+
+
+@keyframes fadeIn {
+  0% {
+      opacity: 0;
+  }
+  10% {
+      opacity: 1;
+  }
+  90% {
+      opacity: 1;
+  }
+  100% {
+      opacity: 0;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .top-keywords-wrapper {
+      animation: none;
+  }
+
+  .keyword {
+      transform: translateX(0px);
+      opacity: 0;
+      position: absolute;
+      flex: 0 0 auto;
+      left: 0;
+  }
+
+  .keyword h3 {
+      font-size: xx-large;
+  }
+
+  .keyword.animate {
+      animation: animatein .6s ease-in;
+      opacity: 1;
+  }
+
+  .keyword.animate.reverse {
+      animation: animateout .6s ease-in;
+      opacity: 1;
+  }
+
+  @keyframes animatein {
+      0% {
+          opacity: 0;
+          transform: translateX(-120px);
+      }
+      100% {
+          opacity: 1;
+          transform: translateX(0px);
+      }
+  }
+  @keyframes animateout {
+      0% {
+          opacity: 1;
+          transform: translateX(0px);
+      }
+      100% {
+          opacity: 0;
+          transform: translateX(+120px);
+      }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .top-logo {
+      max-width: 80%;
+      margin: 0 auto;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .top-title h1 {
+      font-size: 2rem;
+  }
+
+  .services-keywords {
+      font-size: 1.3rem;
+  }
+
+  .top-keywords-wrapper {
+      margin: 2em auto;
+  }
+
+  .social-icons {
+      width: 100%;
+  }
+
+  .rights {
+      text-align: center;
+  }
+}
+
+/* middle section */
+.middle-section{
+  background-image: url("/Users/georgiobejjani/Desktop/Projet_informatique/dietProject/Diet-project-frontend/diet-planning-app/src/photos/images.jpg");
+  min-height: 60vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  border-top: 1px solid #fff;
+}
+
+.middle-section:before {
+  content: "";
+  position: absolute;
+  top:0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 1;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.middle-wrapper{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding-top: 0.2cm;
+}
+
+.container-dedication{
+  width: 15em;
+  height:20em;
+  z-index: 999;
+  text-align: center;
+  position: relative;
+}
+
+.container-reputation{
+  width: 15em;
+  height:20em;
+  z-index: 999;
+  text-align: center;
+  position: relative;
+}
+
+.container-result{
+  width: 15em;
+  height: 20em;
+  z-index: 999;
+  text-align: center;
+  position: relative;
+}
+
+.container-title-dedication{
+  width: 14.9em;
+  height:8em;
+  text-align: center;
+  position: relative;
+}
+
+.container-title-reputation{
+  width: 14.9em;
+  height:8em;
+  opacity: 1;
+  text-align: center;
+  position: relative;
+  
+}
+.container-title-result{
+  width: 14.9em;
+  height:8em;
+  opacity: 1;
+  text-align: center;
+  position: relative;
+  
+}
+.middle-title-wrapper {
+  text-align: center;
+  position: relative;
+}
+.middle-title {
+  margin-bottom: 0.2cm;
+}
+
+.middle-title h1 {
+  margin: 1 auto;
+  font-weight: 600;
+  font-size: 1rem;
+  color: #2A9BE5;
+}
+
+.middle-title-message{
+  margin-top: 0 auto;
+  font-weight: 600;
+  font-size: 1rem;
+  color: #fff;
+}
+
+h4{
+  padding-top: 1cm;
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #fff;
+}
+p{
+  color: #fff;
+}
+
+/* last section */
+
+.last-section{
+  width: 100%;
+  min-height: 50vh;
+  background-color: #2D3033;
+  border-top: 1px solid #fff; 
+}
+
+
+
+.separator-last{
+  width: 80px;
+  height: 0.2cm;
+  margin: 1em auto;
+  display: inline-block;
+}
+
+.last-wrapper {
+  text-align: center;
+  position: relative;
+  color: white;
+  padding-bottom: 2em;
+}
+.last-title {
+  margin-bottom: 0.2cm;
+}
+
+.last-title h1 {
+  margin: 1 auto;
+  font-weight: 600;
+  font-size: 1rem;
+  color: #2A9BE5;
+}
+
+.message{
+  margin-top: 0 auto;
+  font-weight: 600;
+  font-size: 1rem;
+}
+.features-wrapping-containers{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding-bottom:20px;
+}
+
+div.dietpackages-container{
+  text-align: center;
+  position: relative;
+  color: white;
+  padding-bottom: 2em;
+  padding-left: 1em;
+}
+
+.dietappointment-container{
+  text-align: center;
+  position: relative;
+  color: white;
+  padding-bottom: 2em;
+  padding-left: 1em;
+}
+
+.dietrecipes-container{
+  text-align: center;
+  position: relative;
+  color: white;
+  padding-bottom: 2em;
+  padding-left: 1em;
+}
+
+.title-lastpart-link{
+  margin-top: 0.5cm;
+}
+.info-lastpart-link{
+  margin-top: 0.5cm;
+}
+.link-lastpart-link{
+  margin-top: 0.6cm;
+  cursor: pointer;
+}
+.link-a:hover{
+  color:gold;
+}
+.link-a{
+  color: #2A9BE5;
+  text-decoration: none;
+}

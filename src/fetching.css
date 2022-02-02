@@ -1,0 +1,221 @@
+.separator-package {
+    width: 80px;
+    height: 2cm;
+    margin: 1em auto;
+    display: inline-block;
+  }
+  
+  
+  .top-section-package {
+    background-image: url("/Users/georgiobejjani/Desktop/Projet_informatique/dietProject/Diet-project-frontend/diet-planning-app/src/photos/packages-top-section.jpg");
+    min-height: 30vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  
+  .top-section-package:before {
+    content: "";
+    position: absolute;
+    top:0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0.6;
+    background-color:black;
+  }
+  
+  .top-wrapper-package {
+    text-align: center;
+    position: relative;
+    color: white;
+    padding-bottom: 1em;
+  }
+  
+  .top-title-package {
+    margin-bottom: 3em;
+
+  }
+  
+  .top-title-package h2 {
+    margin: 0 auto;
+    font-weight: 600;
+    font-size: 1.5rem;
+  }
+  
+  .top-keywords-wrapper-package {
+    margin: 0em auto 4em;
+    min-height: 80px;
+    overflow-x: hidden;
+    flex-wrap: nowrap;
+    animation: fadeIn 10s infinite ease-in-out;
+  }
+  
+  .top-keywords-wrapper-package::-webkit-scrollbar {
+    display: none;
+  }
+
+  .package-navbar-link-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-top: 3rem;
+}
+  .package-navbar-links h3{
+    font-size: 1.5rem;
+    
+  }
+  
+  @keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    10% {
+        opacity: 1;
+    }
+    90% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+  }
+  
+  @media only screen and (max-width: 1000px) {
+    .top-keywords-wrapper-package {
+        animation:none;
+    }
+  
+    .keyword-package {
+        transform: translateX(0px);
+        opacity: 0;
+        position: absolute;
+        flex: 0 0 auto;
+        left: 0;
+    }
+  
+    .keyword-package p {
+        font-size: xx-large;
+    }
+  
+    .keyword-package.animate {
+        animation: animatein .6s ease-in;
+        opacity: 1;
+    }
+  
+    .keyword-package.animate.reverse {
+        animation: animateout .6s ease-in;
+        opacity: 1;
+    }
+  
+    @keyframes animatein {
+        0% {
+            opacity: 0;
+            transform: translateX(-120px);
+        }
+        100% {
+            opacity: 1;
+            transform: translateX(0px);
+        }
+    }
+    @keyframes animateout {
+        0% {
+            opacity: 1;
+            transform: translateX(0px);
+        }
+        100% {
+            opacity: 0;
+            transform: translateX(+120px);
+        }
+    }
+  }
+  
+  
+  
+  @media only screen and (max-width: 500px) {
+    .top-title-package h2 {
+        font-size: 2rem;
+    }
+  
+    .services-keywords {
+        font-size: 1.3rem;
+    }
+  
+    .top-keywords-wrapper-package {
+        margin: 2em auto;
+    }
+  
+    .social-icons {
+        width: 100%;
+    }
+  
+    .rights {
+        text-align: center;
+    }
+  }
+
+
+/* middle section */
+.middle-section-packages {
+    background-color: #fff;
+    min-height: 60vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+
+
+
+
+.container-infos{
+    width: 20rem;
+    height: 22rem;
+    /* text-align: center; */
+    position: relative;
+    background-color: #fff;
+    border-radius:1cm;
+    padding-left: 2rem;
+    padding-top: 2rem;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #ABABAB;
+}
+.middle-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 30vh;
+    justify-content: space-evenly;
+    padding-top: 5rem;
+  }
+  .btn-plan{
+    background-color: #EEEDFD;
+    width: 12rem;
+    height:2.5rem;
+    border-radius:10px;
+    border-color: #EEEDFD;
+    color: #897CB2;
+    font-weight: 600;
+  }
+
+  .container-infos-desc,
+  .container-infos-list-features,
+  .month-tag{
+      color: #ABABAB;
+      font-weight: 600;
+      font-size: 0.9rem;
+      padding-top: 1rem;
+  }
+
+  .btn-positioning{
+      padding-left: 2rem;
+      padding-top: 1rem;
+  }
+
+  .last-section-packages{
+    width: 100%;
+    min-height: 30vh;
+    background-color: #2D3033;
+    border-top: 1px solid #fff; 
+  }

@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+.search-bar{
+    border: 3px solid #00B4CC;
+    padding: 15px;
+    height: 20px;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.search-bar::placeholder { 
+    font-family: 'Open Sans', sans-serif;
+    opacity: 1;
+  }

@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css?family=Padauk&display=swap');
+
+  .separator-contact {
+    width: 80px;
+    height: 2cm;
+    margin: 1em auto;
+    display: inline-block;
+  }
+  
+  
+  .top-section-contact {
+    background-image: url("/Users/georgiobejjani/Desktop/Projet_informatique/dietProject/Diet-project-frontend/diet-planning-app/src/photos/contact_page_section1.jpg");
+    min-height: 30vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  
+  .top-section-contact:before {
+    content: "";
+    position: absolute;
+    top:0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0.6;
+    background-color:black;
+  }
+  
+  .top-wrapper-contact {
+    text-align: center;
+    position: relative;
+    color: white;
+    padding-bottom: 1em;
+  }
+  
+  .top-title-contact {
+    margin-bottom: 3em;
+
+  }
+  
+  .top-title-contact h2 {
+    margin: 0 auto;
+    font-weight: 600;
+    font-size: 1.5rem;
+  }
+  
+  .top-keywords-wrapper-contact {
+    margin: 0em auto 4em;
+    min-height: 80px;
+    overflow-x: hidden;
+    flex-wrap: nowrap;
+    animation: fadeIn 10s infinite ease-in-out;
+  }
+  
+  .top-keywords-wrapper-contact::-webkit-scrollbar {
+    display: none;
+  }
+
+  .contact-navbar-link-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-top: 3rem;
+}
+  .contact-navbar-links h3{
+    font-size: 1.5rem;
+    
+  }
+  
+  @keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    10% {
+        opacity: 1;
+    }
+    90% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+  }
+  
+  @media only screen and (max-width: 1000px) {
+    .top-keywords-wrapper-contact {
+        animation:none;
+    }
+  
+    .keyword-contact {
+        transform: translateX(0px);
+        opacity: 0;
+        position: absolute;
+        flex: 0 0 auto;
+        left: 0;
+    }
+  
+    .keyword-contact p {
+        font-size: xx-large;
+    }
+  
+    .keyword-contact.animate {
+        animation: animatein .6s ease-in;
+        opacity: 1;
+    }
+  
+    .keyword-contact.animate.reverse {
+        animation: animateout .6s ease-in;
+        opacity: 1;
+    }
+  
+    @keyframes animatein {
+        0% {
+            opacity: 0;
+            transform: translateX(-120px);
+        }
+        100% {
+            opacity: 1;
+            transform: translateX(0px);
+        }
+    }
+    @keyframes animateout {
+        0% {
+            opacity: 1;
+            transform: translateX(0px);
+        }
+        100% {
+            opacity: 0;
+            transform: translateX(+120px);
+        }
+    }
+  }
+  
+  
+  
+  @media only screen and (max-width: 500px) {
+    .top-title-contact h2 {
+        font-size: 2rem;
+    }
+  
+    .services-keywords {
+        font-size: 1.3rem;
+    }
+  
+    .top-keywords-wrapper-contact {
+        margin: 2em auto;
+    }
+  
+    .social-icons {
+        width: 100%;
+    }
+  
+    .rights {
+        text-align: center;
+    }
+  }
+
+  /* middle-section */
+
+  .middle-section-contact{
+        display: flex;
+        flex-wrap: wrap;
+        min-height: 30vh;
+        justify-content: space-evenly;
+        padding-top: 5rem;
+  }
+
+  .customer-suport-container{
+    width: 20rem;
+    height: 20rem;
+    text-align: center;
+    position: relative;
+  }
+  
+  
+
+  .sales-inquiry-container{
+    width: 20rem;
+    height: 20rem;
+    text-align: center;
+    position: relative;
+  }
+
+  
+
+  .location-container{
+    width: 20rem;
+    height: 20rem;
+    text-align: center;
+    position: relative;
+  }
+
+  .contact-title-reference,
+  .contact-message-reference,
+  .contact-btn-positioning
+  {
+      padding-top: 1rem;
+  }
+  .contact-message-reference{
+      color: #000;
+  }
+  .contact-btn-reference{
+      background-color: #2A9BE5;
+      width: 8rem;
+      height:2rem;
+      border-radius:10px;
+      border-color: #2A9BE5;
+      color: #fff;
+      font-weight: 600;
+      
+  }
+  .contact-btn-reference:hover{
+    cursor: pointer;
+  }
+  .contact-label-reference{
+    color: #2A9BE5;
+    font-weight: 600;
+}
+  .contact-sales-enquiry{
+    background-image: url("/Users/georgiobejjani/Desktop/Projet_informatique/dietProject/Diet-project-frontend/diet-planning-app/src/photos/white-abstract-background.webp");
+    min-height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
